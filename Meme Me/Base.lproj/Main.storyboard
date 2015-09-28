@@ -88,23 +88,23 @@
                                 <exclude reference="fIb-ed-Dlm"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4e9-dm-mBW"/>
-                                <exclude reference="8BY-sc-jmW"/>
-                                <exclude reference="gpC-Oq-S9V"/>
-                                <exclude reference="KRS-os-yJF"/>
-                                <exclude reference="Poz-8E-6Tj"/>
-                                <exclude reference="bjx-qt-9BB"/>
-                                <exclude reference="t2t-ka-JcC"/>
+                                <exclude reference="3ic-6x-sXQ"/>
+                                <exclude reference="ASW-Vi-Et1"/>
+                                <exclude reference="KDT-uT-dRR"/>
                                 <exclude reference="8cn-nk-AtI"/>
                                 <exclude reference="Ak8-2j-1am"/>
                                 <exclude reference="dPI-bC-Uey"/>
-                                <exclude reference="ASW-Vi-Et1"/>
-                                <exclude reference="KDT-uT-dRR"/>
                                 <exclude reference="N7Y-3e-odt"/>
                                 <exclude reference="beJ-eA-dvz"/>
                                 <exclude reference="fln-qH-J2L"/>
                                 <exclude reference="xei-xe-nPC"/>
-                                <exclude reference="3ic-6x-sXQ"/>
+                                <exclude reference="KRS-os-yJF"/>
+                                <exclude reference="Poz-8E-6Tj"/>
+                                <exclude reference="bjx-qt-9BB"/>
+                                <exclude reference="t2t-ka-JcC"/>
+                                <exclude reference="4e9-dm-mBW"/>
+                                <exclude reference="8BY-sc-jmW"/>
+                                <exclude reference="gpC-Oq-S9V"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -116,23 +116,23 @@
                                 <include reference="fIb-ed-Dlm"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4e9-dm-mBW"/>
-                                <include reference="8BY-sc-jmW"/>
-                                <include reference="gpC-Oq-S9V"/>
-                                <include reference="KRS-os-yJF"/>
-                                <include reference="Poz-8E-6Tj"/>
-                                <include reference="bjx-qt-9BB"/>
-                                <include reference="t2t-ka-JcC"/>
+                                <include reference="3ic-6x-sXQ"/>
+                                <include reference="ASW-Vi-Et1"/>
+                                <include reference="KDT-uT-dRR"/>
                                 <include reference="8cn-nk-AtI"/>
                                 <include reference="Ak8-2j-1am"/>
                                 <include reference="dPI-bC-Uey"/>
-                                <include reference="ASW-Vi-Et1"/>
-                                <include reference="KDT-uT-dRR"/>
                                 <include reference="N7Y-3e-odt"/>
                                 <include reference="beJ-eA-dvz"/>
                                 <include reference="fln-qH-J2L"/>
                                 <include reference="xei-xe-nPC"/>
-                                <include reference="3ic-6x-sXQ"/>
+                                <include reference="KRS-os-yJF"/>
+                                <include reference="Poz-8E-6Tj"/>
+                                <include reference="bjx-qt-9BB"/>
+                                <include reference="t2t-ka-JcC"/>
+                                <include reference="4e9-dm-mBW"/>
+                                <include reference="8BY-sc-jmW"/>
+                                <include reference="gpC-Oq-S9V"/>
                             </mask>
                         </variation>
                     </view>
@@ -140,7 +140,9 @@
                         <outlet property="bottomText" destination="2jq-wQ-g3S" id="AcT-w5-7vz"/>
                         <outlet property="cameraButton" destination="aZM-Ln-MPy" id="FgB-TG-Nw5"/>
                         <outlet property="imagePickerView" destination="FO8-5D-n9O" id="Zpm-ve-KDU"/>
+                        <outlet property="navigationBar" destination="fIb-ed-Dlm" id="szs-f7-6W8"/>
                         <outlet property="shareButton" destination="s4n-rG-gYU" id="t8H-Z8-Ksc"/>
+                        <outlet property="toolBar" destination="8Ea-DD-rSI" id="Irz-g7-vlP"/>
                         <outlet property="topText" destination="c1f-dU-46B" id="AZT-IR-DjV"/>
                     </connections>
                 </viewController>
