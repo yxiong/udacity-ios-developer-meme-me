@@ -21,6 +21,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ea-DD-rSI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
+                                    <barButtonItem title="Camera" id="aZM-Ln-MPy">
+                                        <connections>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="e7I-EA-KhE"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Pick" id="qP2-lS-EEG">
                                         <connections>
                                             <action selector="pickAnImage:" destination="BYZ-38-t0r" id="0Sz-lk-BYP"/>
@@ -63,13 +68,13 @@
                                 <exclude reference="FO8-5D-n9O"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4e9-dm-mBW"/>
-                                <exclude reference="8BY-sc-jmW"/>
-                                <exclude reference="gpC-Oq-S9V"/>
+                                <exclude reference="3ic-6x-sXQ"/>
                                 <exclude reference="N7Y-3e-odt"/>
                                 <exclude reference="beJ-eA-dvz"/>
                                 <exclude reference="xei-xe-nPC"/>
-                                <exclude reference="3ic-6x-sXQ"/>
+                                <exclude reference="4e9-dm-mBW"/>
+                                <exclude reference="8BY-sc-jmW"/>
+                                <exclude reference="gpC-Oq-S9V"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -78,17 +83,18 @@
                                 <include reference="FO8-5D-n9O"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4e9-dm-mBW"/>
-                                <include reference="8BY-sc-jmW"/>
-                                <include reference="gpC-Oq-S9V"/>
+                                <include reference="3ic-6x-sXQ"/>
                                 <include reference="N7Y-3e-odt"/>
                                 <include reference="beJ-eA-dvz"/>
                                 <include reference="xei-xe-nPC"/>
-                                <include reference="3ic-6x-sXQ"/>
+                                <include reference="4e9-dm-mBW"/>
+                                <include reference="8BY-sc-jmW"/>
+                                <include reference="gpC-Oq-S9V"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="aZM-Ln-MPy" id="FgB-TG-Nw5"/>
                         <outlet property="imagePickerView" destination="FO8-5D-n9O" id="Zpm-ve-KDU"/>
                     </connections>
                 </viewController>
