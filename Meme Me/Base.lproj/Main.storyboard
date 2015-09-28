@@ -71,9 +71,9 @@
                                 <exclude reference="2jq-wQ-g3S"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4e9-dm-mBW"/>
-                                <exclude reference="8BY-sc-jmW"/>
-                                <exclude reference="gpC-Oq-S9V"/>
+                                <exclude reference="3ic-6x-sXQ"/>
+                                <exclude reference="ASW-Vi-Et1"/>
+                                <exclude reference="KDT-uT-dRR"/>
                                 <exclude reference="Ak8-2j-1am"/>
                                 <exclude reference="dPI-bC-Uey"/>
                                 <exclude reference="mrL-lY-igx"/>
@@ -81,9 +81,9 @@
                                 <exclude reference="beJ-eA-dvz"/>
                                 <exclude reference="fln-qH-J2L"/>
                                 <exclude reference="xei-xe-nPC"/>
-                                <exclude reference="ASW-Vi-Et1"/>
-                                <exclude reference="KDT-uT-dRR"/>
-                                <exclude reference="3ic-6x-sXQ"/>
+                                <exclude reference="4e9-dm-mBW"/>
+                                <exclude reference="8BY-sc-jmW"/>
+                                <exclude reference="gpC-Oq-S9V"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -94,9 +94,9 @@
                                 <include reference="2jq-wQ-g3S"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4e9-dm-mBW"/>
-                                <include reference="8BY-sc-jmW"/>
-                                <include reference="gpC-Oq-S9V"/>
+                                <include reference="3ic-6x-sXQ"/>
+                                <include reference="ASW-Vi-Et1"/>
+                                <include reference="KDT-uT-dRR"/>
                                 <include reference="Ak8-2j-1am"/>
                                 <include reference="dPI-bC-Uey"/>
                                 <include reference="mrL-lY-igx"/>
@@ -104,9 +104,9 @@
                                 <include reference="beJ-eA-dvz"/>
                                 <include reference="fln-qH-J2L"/>
                                 <include reference="xei-xe-nPC"/>
-                                <include reference="ASW-Vi-Et1"/>
-                                <include reference="KDT-uT-dRR"/>
-                                <include reference="3ic-6x-sXQ"/>
+                                <include reference="4e9-dm-mBW"/>
+                                <include reference="8BY-sc-jmW"/>
+                                <include reference="gpC-Oq-S9V"/>
                             </mask>
                         </variation>
                     </view>
