@@ -28,20 +28,21 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-5D-n9O">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-5D-n9O">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="MWW-ZC-kxT"/>
+                                    <constraint firstAttribute="width" constant="240" id="MWW-ZC-kxT">
+                                        <variation key="heightClass=regular" constant="240"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="MWW-ZC-kxT"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="180" y="336" width="240" height="128"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="MWW-ZC-kxT"/>
+                                        <exclude reference="MWW-ZC-kxT"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -49,12 +50,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Ea-DD-rSI" secondAttribute="bottom" id="3ic-6x-sXQ"/>
-                            <constraint firstItem="8Ea-DD-rSI" firstAttribute="top" secondItem="FO8-5D-n9O" secondAttribute="bottom" id="6mt-dk-hoq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FO8-5D-n9O" secondAttribute="trailing" id="GpM-N9-Qas"/>
+                            <constraint firstAttribute="trailing" secondItem="FO8-5D-n9O" secondAttribute="trailing" id="4e9-dm-mBW"/>
+                            <constraint firstItem="FO8-5D-n9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8BY-sc-jmW"/>
+                            <constraint firstItem="8Ea-DD-rSI" firstAttribute="top" secondItem="FO8-5D-n9O" secondAttribute="bottom" id="N7Y-3e-odt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Ea-DD-rSI" secondAttribute="trailing" constant="-20" id="beJ-eA-dvz"/>
-                            <constraint firstItem="FO8-5D-n9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ehx-sl-dWC"/>
+                            <constraint firstItem="FO8-5D-n9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gpC-Oq-S9V"/>
                             <constraint firstItem="8Ea-DD-rSI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xei-xe-nPC"/>
-                            <constraint firstItem="FO8-5D-n9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zYQ-8M-AfX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -62,10 +63,10 @@
                                 <exclude reference="FO8-5D-n9O"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GpM-N9-Qas"/>
-                                <exclude reference="ehx-sl-dWC"/>
-                                <exclude reference="zYQ-8M-AfX"/>
-                                <exclude reference="6mt-dk-hoq"/>
+                                <exclude reference="4e9-dm-mBW"/>
+                                <exclude reference="8BY-sc-jmW"/>
+                                <exclude reference="gpC-Oq-S9V"/>
+                                <exclude reference="N7Y-3e-odt"/>
                                 <exclude reference="beJ-eA-dvz"/>
                                 <exclude reference="xei-xe-nPC"/>
                                 <exclude reference="3ic-6x-sXQ"/>
@@ -77,10 +78,10 @@
                                 <include reference="FO8-5D-n9O"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GpM-N9-Qas"/>
-                                <include reference="ehx-sl-dWC"/>
-                                <include reference="zYQ-8M-AfX"/>
-                                <include reference="6mt-dk-hoq"/>
+                                <include reference="4e9-dm-mBW"/>
+                                <include reference="8BY-sc-jmW"/>
+                                <include reference="gpC-Oq-S9V"/>
+                                <include reference="N7Y-3e-odt"/>
                                 <include reference="beJ-eA-dvz"/>
                                 <include reference="xei-xe-nPC"/>
                                 <include reference="3ic-6x-sXQ"/>
