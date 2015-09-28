@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +28,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-5D-n9O">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-5D-n9O">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="MWW-ZC-kxT"/>
@@ -37,7 +38,8 @@
                                         <exclude reference="MWW-ZC-kxT"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular">
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="180" y="336" width="240" height="128"/>
                                     <mask key="constraints">
                                         <include reference="MWW-ZC-kxT"/>
                                     </mask>
@@ -47,11 +49,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Ea-DD-rSI" secondAttribute="bottom" id="3ic-6x-sXQ"/>
-                            <constraint firstItem="FO8-5D-n9O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fje-Os-GtX"/>
-                            <constraint firstItem="FO8-5D-n9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="316" id="Xrr-lO-Efq"/>
+                            <constraint firstItem="8Ea-DD-rSI" firstAttribute="top" secondItem="FO8-5D-n9O" secondAttribute="bottom" id="6mt-dk-hoq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FO8-5D-n9O" secondAttribute="trailing" id="GpM-N9-Qas"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Ea-DD-rSI" secondAttribute="trailing" constant="-20" id="beJ-eA-dvz"/>
-                            <constraint firstItem="FO8-5D-n9O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tZ0-l5-qcs"/>
+                            <constraint firstItem="FO8-5D-n9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ehx-sl-dWC"/>
                             <constraint firstItem="8Ea-DD-rSI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xei-xe-nPC"/>
+                            <constraint firstItem="FO8-5D-n9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zYQ-8M-AfX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -59,9 +62,10 @@
                                 <exclude reference="FO8-5D-n9O"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Fje-Os-GtX"/>
-                                <exclude reference="Xrr-lO-Efq"/>
-                                <exclude reference="tZ0-l5-qcs"/>
+                                <exclude reference="GpM-N9-Qas"/>
+                                <exclude reference="ehx-sl-dWC"/>
+                                <exclude reference="zYQ-8M-AfX"/>
+                                <exclude reference="6mt-dk-hoq"/>
                                 <exclude reference="beJ-eA-dvz"/>
                                 <exclude reference="xei-xe-nPC"/>
                                 <exclude reference="3ic-6x-sXQ"/>
@@ -73,9 +77,10 @@
                                 <include reference="FO8-5D-n9O"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Fje-Os-GtX"/>
-                                <include reference="Xrr-lO-Efq"/>
-                                <include reference="tZ0-l5-qcs"/>
+                                <include reference="GpM-N9-Qas"/>
+                                <include reference="ehx-sl-dWC"/>
+                                <include reference="zYQ-8M-AfX"/>
+                                <include reference="6mt-dk-hoq"/>
                                 <include reference="beJ-eA-dvz"/>
                                 <include reference="xei-xe-nPC"/>
                                 <include reference="3ic-6x-sXQ"/>
