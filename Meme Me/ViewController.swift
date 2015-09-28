@@ -15,10 +15,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var topText: UITextField!
     @IBOutlet weak var bottomText: UITextField!
     
+    let topTextDelegate = TextFieldDelegate(defaultText: "TOP")
+    let bottomTextDelegate = TextFieldDelegate(defaultText: "BOTTOM")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         topText.text = "TOP"
         bottomText.text = "BOTTOM"
+        topText.delegate = topTextDelegate
+        bottomText.delegate = bottomTextDelegate
     }
     
     override func viewWillAppear(animated: Bool) {
