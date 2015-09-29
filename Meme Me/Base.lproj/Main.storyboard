@@ -21,16 +21,18 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ea-DD-rSI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2ct-fy-oDo"/>
                                     <barButtonItem title="Camera" id="aZM-Ln-MPy">
                                         <connections>
                                             <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="e7I-EA-KhE"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Pick" id="qP2-lS-EEG">
+                                    <barButtonItem title="Album" id="qP2-lS-EEG">
                                         <connections>
                                             <action selector="pickAnImage:" destination="BYZ-38-t0r" id="0Sz-lk-BYP"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KQs-sN-p4U"/>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-5D-n9O">
