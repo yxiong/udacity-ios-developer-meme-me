@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var imagePickerView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var topText: UITextField!
@@ -46,7 +46,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
-        shareButton.enabled = (imagePickerView.image != nil)
+        shareButton.enabled = (imageView.image != nil)
         self.subscribeToKeyboardNotifications()
     }
     
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
-            self.imagePickerView.image = image
+            self.imageView.image = image
         } else {
             print("No image found")
         }
@@ -71,7 +71,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func pickAnImage(sender: AnyObject) {
+    @IBAction func pickAnImageFromAlbum(sender: AnyObject) {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
         self.presentViewController(pickerController, animated: true, completion: nil)
@@ -108,7 +108,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func save() {
-        let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, image: imagePickerView.image!, memedImage: self.generateMemedImage())
+        let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, image: imageView.image!, memedImage: self.generateMemedImage())
         savedMemes.append(meme)
     }
     

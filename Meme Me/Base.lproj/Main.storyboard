@@ -29,7 +29,7 @@
                                     </barButtonItem>
                                     <barButtonItem title="Album" id="qP2-lS-EEG">
                                         <connections>
-                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="0Sz-lk-BYP"/>
+                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="uNs-dU-end"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="KQs-sN-p4U"/>
@@ -141,7 +141,7 @@
                     <connections>
                         <outlet property="bottomText" destination="2jq-wQ-g3S" id="AcT-w5-7vz"/>
                         <outlet property="cameraButton" destination="aZM-Ln-MPy" id="FgB-TG-Nw5"/>
-                        <outlet property="imagePickerView" destination="FO8-5D-n9O" id="Zpm-ve-KDU"/>
+                        <outlet property="imageView" destination="FO8-5D-n9O" id="Pf7-Mm-q17"/>
                         <outlet property="navigationBar" destination="fIb-ed-Dlm" id="szs-f7-6W8"/>
                         <outlet property="shareButton" destination="s4n-rG-gYU" id="t8H-Z8-Ksc"/>
                         <outlet property="toolBar" destination="8Ea-DD-rSI" id="Irz-g7-vlP"/>
