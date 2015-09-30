@@ -48,7 +48,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Meme Me" id="RRX-Eb-eLn">
-                                        <barButtonItem key="leftBarButtonItem" title="Share" id="s4n-rG-gYU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="s4n-rG-gYU">
                                             <connections>
                                                 <action selector="shareMeme:" destination="BYZ-38-t0r" id="UVg-EC-fbC"/>
                                             </connections>
