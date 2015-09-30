@@ -60,7 +60,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
             imageView.image = image
         } else {
-            print("No image found")
+            let alert = UIAlertController(title: "No image found", message: "imagePickerController: No image is found.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
         }
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -81,7 +83,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func shareMeme(sender: AnyObject) {
         let memedImage = generateMemedImage()
         let activityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
-        presentViewController(activityViewController, animated: true, completion: self.save)
+        save()
+        presentViewController(activityViewController, animated: true, completion: nil)
     }
     
     func getKeyboardHeight(notification: NSNotification) -> CGFloat {
@@ -91,11 +94,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func keyboardWillShow(notification: NSNotification) {
-        view.frame.origin.y -= getKeyboardHeight(notification)
+        if bottomText.isFirstResponder() {
+            view.frame.origin.y -= getKeyboardHeight(notification)
+        }
     }
     
     func keyboardWillHide(notification: NSNotification) {
-        view.frame.origin.y += getKeyboardHeight(notification)
+        if bottomText.isFirstResponder() {
+            view.frame.origin.y += getKeyboardHeight(notification)
+        }
     }
     
     func subscribeToKeyboardNotifications() {
