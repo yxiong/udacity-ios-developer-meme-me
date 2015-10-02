@@ -22,8 +22,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     let topTextDelegate = TextFieldDelegate(defaultText: "TOP")
     let bottomTextDelegate = TextFieldDelegate(defaultText: "BOTTOM")
     
-    var savedMemes = [Meme]()
-    
     let memeTextAttributes = [
         NSStrokeColorAttributeName: UIColor.blackColor(),
         NSForegroundColorAttributeName: UIColor.whiteColor(),
@@ -117,7 +115,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     func save() {
         let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, image: imageView.image!, memedImage: generateMemedImage())
-        savedMemes.append(meme)
+        (UIApplication.sharedApplication().delegate as! AppDelegate).memes.append(meme)
     }
     
     func generateMemedImage() -> UIImage {
