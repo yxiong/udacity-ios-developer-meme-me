@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-529" y="182"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Sent Memes-->
         <scene sceneID="Xuc-0X-Vim">
             <objects>
-                <tableViewController id="R5Y-cE-7ar" sceneMemberID="viewController">
+                <tableViewController id="R5Y-cE-7ar" customClass="MemeTableViewController" customModule="Meme_Me" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KdO-oG-nzQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
                             <outlet property="delegate" destination="R5Y-cE-7ar" id="l1Z-sn-epM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="r9e-cb-nBR"/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="r9e-cb-nBR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5y-uB-Dlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
