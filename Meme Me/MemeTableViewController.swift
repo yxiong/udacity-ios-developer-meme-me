@@ -33,8 +33,4 @@ class MemeTableViewController: UITableViewController {
         cell.textLabel?.text = meme.topText + "|" + meme.bottomText
         return cell
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // TODO
-    }
 }

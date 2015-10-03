@@ -44,8 +44,4 @@ class MemeCollectionViewController: UICollectionViewController {
         cell.imageView?.image = meme.memedImage
         return cell
     }
-    
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        // TODO
-    }
 }
