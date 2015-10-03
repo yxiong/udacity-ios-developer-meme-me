@@ -64,7 +64,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-XH-tX5">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-XH-tX5">
                                             <rect key="frame" x="-60" y="-4" width="240" height="128"/>
                                             <animations/>
                                         </imageView>
@@ -84,6 +84,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="uLb-RE-Obj"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="hhb-CL-EQe" id="aHM-ZH-aLl"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrb-2c-xXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
