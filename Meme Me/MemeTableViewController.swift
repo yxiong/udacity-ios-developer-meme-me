@@ -21,7 +21,6 @@ class MemeTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(memes.count)
         return memes.count
     }
     
@@ -32,5 +31,9 @@ class MemeTableViewController: UITableViewController {
         cell.imageView?.image = meme.memedImage
         cell.textLabel?.text = meme.topText + "|" + meme.bottomText
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // TODO
     }
 }
