@@ -81,7 +81,13 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func shareMeme(sender: AnyObject) {
         let memedImage = generateMemedImage()
         let activityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
-        save()
+        activityViewController.completionWithItemsHandler = {
+            (activity, success, items, error) in
+            if success {
+                self.save()
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
         presentViewController(activityViewController, animated: true, completion: nil)
     }
     
@@ -137,7 +143,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @IBAction func backToSentMemes(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
